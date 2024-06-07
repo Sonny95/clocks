@@ -1,7 +1,7 @@
 import "./css/App.css";
 import { useState, useEffect } from "react";
-import AnalogueClock from "./components/analogue";
-import DigitalClock from "./components/digital";
+import Analogue from "./components/Analogue";
+import Digital from "./components/Digital";
 
 function App() {
   //get current time
@@ -23,9 +23,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         {/* analogueClock */}
-        <AnalogueClock getTime={getTime} />
+        <Analogue getTime={getTime} />
         {/* digitalClock */}
-        <DigitalClock getTime={getTime} />
+        <Digital getTime={getTime} />
       </header>
     </div>
   );
