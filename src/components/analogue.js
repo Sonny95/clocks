@@ -23,10 +23,13 @@ function Analogue({ getTime }) {
         secondHand.style.transform = `rotate(${degSecond}deg)`;
       }
     };
-    const interval = setInterval(updateClock, 1000);
 
+    //update every second
+    const interval = setInterval(updateClock, 1000);
+    //clear interval before renew second
     return () => clearInterval(interval);
   }, [getTime()]);
+
   return (
     <div>
       <div className="analogueContainer">
