@@ -1,7 +1,7 @@
 import "./css/App.css";
 import { useState, useEffect } from "react";
-import AnalogueClock from "../src/components/analogue";
-import DigitalClock from "../src/components/digital";
+import AnalogueClock from "./components/analogue";
+import DigitalClock from "./components/digital";
 
 function App() {
   //get current time
