@@ -1,0 +1,49 @@
+.analogueContainer {
+  height: 200px;
+  width: 200px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+  background: linear-gradient(black 70%, gray 30%);
+  height: 180px;
+  width: 180px;
+  border-radius: 100%;
+  position: relative;
+}
+
+.hour {
+  width: 5px;
+  height: 55px;
+  background-color: white;
+  z-index: 10;
+  transform-origin: bottom;
+  position: absolute;
+  top: calc(160% - 140%);
+  left: calc(50% - 5px);
+}
+
+.minute {
+  width: 3px;
+  height: 70px;
+  background-color: white;
+  z-index: 8;
+  transform-origin: bottom;
+  position: absolute;
+  top: calc(150% - 140%);
+  left: calc(50% - 5px);
+}
+
+.second {
+  width: 3px;
+  height: 80px;
+  background-color: white;
+  z-index: 5;
+  transform-origin: bottom;
+  position: absolute;
+  top: calc(145% - 140%);
+  left: calc(50% - 5px);
+}
